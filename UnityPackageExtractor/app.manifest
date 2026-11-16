@@ -2,12 +2,9 @@
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
   <assemblyIdentity version="1.0.0.0" name="UnityPackageExtractor.app" />
 
-  <!-- Mark the process as DPI aware so text and icons stay crisp on high-resolution
-       Windows 10/11 displays instead of being bitmap-stretched by the OS. -->
+  <!-- 高 DPI 现由项目属性 ApplicationHighDpiMode 配置；这里仅保留长路径支持 -->
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>
-      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/pm</dpiAware>
-      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2, PerMonitor</dpiAwareness>
       <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
     </windowsSettings>
   </application>
